@@ -8,6 +8,7 @@ import {
   Form,
 } from "@builder.io/qwik-city";
 import styles from "./todolist.module.css";
+import { title } from './demo.css';
 
 interface ListItem {
   text: string;
@@ -39,7 +40,7 @@ export default component$(() => {
     <>
       <div class="container container-center">
         <h1>
-          <span class="highlight">TODO</span> List
+          <span class={title}>TODO</span> List
         </h1>
       </div>
 
